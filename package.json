@@ -21,6 +21,7 @@
   "dependencies": {
     "@azure-rest/ai-inference": "^1.0.0-beta.6",
     "dotenv": "^16.5.0",
+    "pdf-parse": "^1.1.1",
     "shape": "^0.0.1",
     "sharp": "^0.34.2"
   }
