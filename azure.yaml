@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+
+webapp:
+    project: packages/webapp
+    host: staticwebapp
+    language: js
+    dist: dist
+    hooks:
+      predeploy:
+        windows:
+          shell: pwsh
+          run: npm run build
+        posix:
+          shell: sh
+          run: npm run build
+
+webapi:
+    project: packages/webapi
+    host: appservice
+    language: js
+    dist: dist
+    hooks:
+      predeploy:
+        windows:
+          shell: pwsh
+          run: npm start
+        posix:
+          shell: sh
+          run: npm start
