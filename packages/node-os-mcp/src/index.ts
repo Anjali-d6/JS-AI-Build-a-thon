@@ -4,7 +4,7 @@ import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
 import express from "express";
 import { server } from "./server";
 
-// Start the server
+// Start the server 
 async function main() {
   const args = process.argv.slice(2);
   const type = args.at(0) || "stdio";
